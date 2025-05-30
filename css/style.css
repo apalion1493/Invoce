@@ -1,0 +1,225 @@
+html {
+  color: #222;
+  font-size: 100%; /* аналог 1em */
+  line-height: 1.4;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  margin: 20px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/* Некоторые из этих тегов не существовали в CSS2, но можно оставить на будущее */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto; /* альтернатива для контроля прокрутки */
+}
+
+/* Вспомогательные классы */
+
+.hidden {
+  display: none !important;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+/* Clearfix без псевдоэлементов */
+.clearfix {
+  zoom: 1; /* Только для IE6/7 */
+}
+
+/* Print стили — простая версия */
+
+@media print {
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  pre {
+    white-space: pre;
+    border: 1px solid #999;
+  }
+
+  blockquote {
+    border: 1px solid #999;
+  }
+
+  h2, h3 {
+    page-break-after: avoid;
+  }
+}
+
+
+.container {
+  max-width: 516px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  /*background: #999999;*/
+}
+
+.header {
+  width: 100%;
+  display: block;
+}
+
+.header__wrapper {
+  float: left;
+  display: block;
+}
+
+.header__logo {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header__info {
+  float: right;
+  width: 267px;
+  background: #F6FAFA;
+  border: 1px solid #CEE0E6;
+  padding: 10px 16px;
+}
+
+.header__info--address {
+  float: left;
+}
+
+.header__info--phone {
+  float: right;
+}
+
+.title-section {
+  width: 100%;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 11px 0;
+  background: linear-gradient(102deg, #0E2B4C 0%, #13477F 100%);
+  margin-top: 14px;
+  margin-bottom: 14px;
+}
+
+.title-section__name {
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 7.5px;
+  font-style: normal;
+  line-height: 130%;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.custom-table tbody {
+  border: 0.5px solid #ccc;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 10px;
+  border: none;
+  border-bottom: 0.5px solid #ccc; /* Только горизонтальные линии */
+  text-align: left;
+}
+
+.custom-table tbody tr:nth-child(even) {
+  background-color: #F6FAFA;
+}
+
+.custom-table2 {
+  font-size: 8px;
+  font-style: normal;
+  line-height: 150%;
+  text-transform: uppercase;
+}
+
+.custom-table2 td {
+  padding-bottom: 6px;
+}
+
+
+.checkbox-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  color: #202020;
+  font-size: 7.5px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.checkbox-box {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #58C19B; /* Зелёная рамка */
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
+  position: relative;
+}
+
+.checkbox-box .checkmark {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  font-size: 12px;
+  color: #58C19B;
+  display: none;
+}
+
+/* Прячем системный чекбокс */
+.checkbox-hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+/* Показываем галочку, если чекбокс отмечен */
+.checkbox-hidden:checked + .checkbox-box .checkmark {
+  display: block;
+}
