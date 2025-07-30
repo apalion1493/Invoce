@@ -155,14 +155,14 @@ textarea {
 
 .title-section.title-section--green {
   background: #58C19B;
-  padding: 8px 0;
+  padding: 16px 0;
 }
 
 .title-section.title-section--green .title-section__name {
-  font-size: 7.5px;
+  font-size: 18px;
   font-weight: 800;
   text-align: left;
-  margin: 0 0 0 10px;
+  margin: 0 0 0 16px;
 }
 
 .custom-table {
@@ -207,15 +207,15 @@ textarea {
   display: inline-block;
   vertical-align: middle;
   color: #202020;
-  font-size: 7.5px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
 .checkbox-box {
-  width: 10px;
-  height: 10px;
+  width: 16px;
+  height: 16px;
   border: 1px solid #58C19B;
   display: inline-block;
   vertical-align: middle;
@@ -227,7 +227,7 @@ textarea {
   position: absolute;
   top: -3px;
   left: 0;
-  font-size: 12px;
+  font-size: 24px;
   color: #58C19B;
   display: none;
 }
