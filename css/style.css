@@ -131,6 +131,7 @@ textarea {
   text-align: center;
   padding: 11px 0;
   background:#13477F;
+  background: -o-linear-gradient(348deg, #0E2B4C 0%, #13477F 100%);
   background: linear-gradient(102deg, #0E2B4C 0%, #13477F 100%);
   margin-top: 14px;
   margin-bottom: 14px;
@@ -145,6 +146,19 @@ textarea {
   font-weight: 800;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.title-section.title-section--green {
+  background: #58C19B;
+  padding: 8px 0;
+}
+
+.title-section.title-section--green .title-section__name {
+  font-size: 7.5px;
+  font-weight: 800;
+  text-align: left;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .custom-table {
@@ -163,9 +177,9 @@ textarea {
 
 .custom-table th,
 .custom-table td {
-  padding: 10px;
+  padding: 8px;
   border: none;
-  border-bottom: 0.5px solid #ccc; /* Только горизонтальные линии */
+  border-bottom: 0.5px solid #ccc;
   text-align: left;
 }
 
@@ -184,7 +198,6 @@ textarea {
   padding-bottom: 6px;
 }
 
-
 .checkbox-wrapper {
   display: inline-block;
   vertical-align: middle;
@@ -198,7 +211,7 @@ textarea {
 .checkbox-box {
   width: 10px;
   height: 10px;
-  border: 1px solid #58C19B; /* Зелёная рамка */
+  border: 1px solid #58C19B;
   display: inline-block;
   vertical-align: middle;
   margin-right: 6px;
@@ -214,13 +227,11 @@ textarea {
   display: none;
 }
 
-/* Прячем системный чекбокс */
 .checkbox-hidden {
   position: absolute;
   left: -9999px;
 }
 
-/* Показываем галочку, если чекбокс отмечен */
 .checkbox-hidden:checked + .checkbox-box .checkmark {
   display: block;
 }
