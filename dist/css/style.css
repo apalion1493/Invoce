@@ -86,7 +86,7 @@ textarea {
 
 
 .container {
-  max-width: 516px;
+  max-width: 2550px;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -106,14 +106,15 @@ textarea {
 .header__logo {
   margin-top: auto;
   margin-bottom: auto;
+  width: 300px;
 }
 
 .header__info {
   float: right;
-  width: 267px;
+  width: 600px;
   background: #F6FAFA;
   border: 1px solid #CEE0E6;
-  padding: 10px 16px;
+  padding: 20px 26px;
 }
 
 .header__info--address {
@@ -122,6 +123,7 @@ textarea {
 
 .header__info--phone {
   float: right;
+  width: 35%;
 }
 
 .title-section {
@@ -130,9 +132,7 @@ textarea {
   display: block;
   text-align: center;
   padding: 11px 0;
-  background:#13477F;
-  background: -o-linear-gradient(348deg, #0E2B4C 0%, #13477F 100%);
-  background: linear-gradient(102deg, #0E2B4C 0%, #13477F 100%);
+  background: #13477F;
   margin-top: 14px;
   margin-bottom: 14px;
 }
@@ -141,7 +141,7 @@ textarea {
   text-align: center;
   vertical-align: middle;
   color: #fff;
-  font-size: 18px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
@@ -157,14 +157,13 @@ textarea {
   font-size: 7.5px;
   font-weight: 800;
   text-align: left;
-  margin: 0;
-  margin-left: 10px;
+  margin: 0 0 0 10px;
 }
 
 .custom-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 7.5px;
+  font-size: 18px;
   font-style: normal;
   line-height: 130%;
   font-weight: 600;
@@ -188,10 +187,11 @@ textarea {
 }
 
 .custom-table2 {
-  font-size: 8px;
+  font-size: 25px;
   font-style: normal;
   line-height: 150%;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .custom-table2 td {
